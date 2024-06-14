@@ -1,0 +1,310 @@
+html,
+body {
+	font-size: 13pt;
+	color: #dfdfdf;
+	background-image: url('../img/Banner.png');
+	background-position: right 0px top;
+	background-repeat: no-repeat;
+	background-color: #131313;
+}
+
+p {
+	color: #dfdfdf;
+	font-size: 13pt;
+	text-align: left;
+}
+
+a {
+	color: #bfedff;
+}
+
+a:hover {
+	color: #93c9df;
+}
+
+h3 {
+	color: #dfdfdf;
+	font-size: 14pt;
+	font-weight: 600;
+}
+
+h4 {
+	color: #dfdfdf;
+	font-size: 12pt;
+	font-style: italic;
+	text-align: left;
+}
+
+hr {
+	margin: 10px 0px;
+}
+
+.display-6 {
+	font-size: 20pt;
+	font-weight: 400;
+}
+
+.txt-shadow {
+	text-shadow: #000000 0px 0 5px;
+}
+
+.about {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.info {
+	background-color: #161616;
+}
+
+.work-showcase {
+	background-color: #222;
+}
+
+.footer {
+	background-color: #131313;
+	padding: 0.5rem 10px 0px 10px;
+}
+
+.muted-text {
+	color: #8d8d8d;
+}
+
+.navbar {
+	background-color: transparent;
+}
+
+.navbar-burger {
+	color: #fff;
+}
+
+.fa {
+	color: #dfdfdf;
+	font-size: 16pt;
+}
+
+a.nav-link:hover {
+	color: #fff;
+}
+
+.placeholder {
+	padding: 5px 0px;
+}
+
+.box img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#lists .box {
+	background-image: linear-gradient(180deg, #32383f, #222222);
+	filter: drop-shadow(0px 0px 3px #a5a5a5);
+}
+
+p,
+h3,
+h4,
+td {
+	filter: drop-shadow(0px 0px 6px #a5a5a5de);
+}
+
+#updates {
+	font-size: 13pt;
+}
+
+.table {
+	--bs-table-bg: transparent;
+	--bs-table-color: #fff;
+	padding: 0px;
+	margin: 0px;
+}
+
+.table>:not(caption)>*>*
+{
+	padding: 0.3rem 0.5rem;
+}
+
+.table.is-narrow td,
+.table.is-narrow th {
+	padding-top: 0px;
+	padding-bottom: 12px;
+}
+
+.table td,
+.table th {
+	border: none;
+}
+
+.date-col {
+	text-align: right;
+}
+
+.table.is-narrow td {
+	padding-right: 10px;
+}
+
+.project-figure {
+	margin: 0 auto 1rem auto;
+	max-height: 256px;
+	max-width: 256px;
+}
+
+.box {
+	background-color: transparent;
+	border: 2px solid #5c6168;
+	color: #dfdfdf
+}
+
+.navbar-brand a.nav-item:focus,
+.navbar-brand a.nav-item:hover {
+	background-color: #222;
+}
+
+a.nav-link:focus-within {
+	color: #9e9e9e;
+}
+
+.nav-item,
+.nav-link {
+	color: #dfdfdf
+}
+
+.nav-glow {
+	filter: drop-shadow(0px 0px 8px #ffffff);
+}
+
+.title {
+	color: #dfdfdf;
+	text-align: left;
+	margin-bottom: 2rem;
+}
+
+.logo-title {
+	text-align: left;
+	vertical-align: bottom;
+	font-size: 44pt;
+}
+
+.void-background {
+	background-color: transparent;
+}
+
+/* These classes are deprecated and need to be replaced with Bulma equivalents */
+
+.flex-container {
+	display: flex;
+	align-items: flex-start;
+}
+
+.flex-avatar {
+	min-width: 100px;
+	max-width: 150px;
+	filter: drop-shadow(0px 0px 10px #a5a5a5);
+	/*border: 2px solid rgb(21, 255, 0);*/
+}
+
+.flex-textbox {
+	flex-grow: 1;
+	/* border: 2px solid rgb(21, 255, 0); */
+}
+
+a.nav-link:hover {
+	filter: drop-shadow(0px 0px 15px #ffffff);
+}
+
+/* 	These modifications are applied when the display is below a certain size; some of the adaptive
+	styling is handled by Bulma already, these are customizations on top of that to ensure a more 
+	consistent style */
+@media screen and (max-width: 1024px) {
+	body {
+		background-image: none;
+	}
+
+	.nav-glow {
+		filter: drop-shadow(0px 0px 6px #a5a5a5);
+	}
+
+	.navbar-brand {
+		padding: 0 5%;
+	}
+
+	.container.navbar,
+	.container.about {
+		max-width: 100%;
+	}
+
+	.container.about {
+		padding: 4rem 1%;
+	}
+
+	.flex-container {
+		max-width: 90%;
+	}
+
+	.container {
+		max-width: 90%;
+	}
+
+	.about {
+		background-image: url('../img/Banner.png');
+		background-position: right -700px top;
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+
+	.navbar {
+		background-color: #222;
+		z-index: auto;
+	}
+
+	#mobile-nav.is-active {
+		background-color: #272b30e8;
+	}
+
+	.navbar-menu {
+		background-color: #272b3000;
+	}
+
+	a.navbar-item:hover {
+		background-color: #222;
+	}
+}
+
+@media screen and (max-width: 410px) {
+	.flex-avatar {
+		max-width: 100px;
+	}
+
+	.logo-title {
+		font-size: 36pt;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.container {
+		max-width: 960px;
+
+	}
+
+	.section {
+		padding: 3rem 0rem;
+	}
+}
+
+@media screen and (min-width: 1216px) {
+	.container:not(.is-max-desktop):not(.is-max-widescreen):not(#avatar) {
+		max-width: 1152px;
+	}
+}
+
+@media screen and (min-width: 1408px) {
+	.container:not(.is-max-desktop):not(.is-max-widescreen) {
+		max-width: 100%;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	body {
+		background-position: center 0;
+	}
+}
