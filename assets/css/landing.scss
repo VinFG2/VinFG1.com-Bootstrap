@@ -1,0 +1,142 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-moz-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
+
+.logo {
+    max-width: 240px;
+    height: auto;
+    position: relative;
+    filter: drop-shadow(0px 0px 30px #ffffff);
+}
+
+.orbital {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 3;
+}
+
+.text-glow {
+    filter: drop-shadow(0px 0px 8px #ffffff);
+}
+
+.muted {
+    font-style: italic;
+    color: #8d8d8d;
+    filter: drop-shadow(0px 0px 8px #c0c0c0);
+}
+
+
+.gradient {
+    background: url("/assets/img/grey.png") no-repeat;
+    background-position: bottom;
+    mix-blend-mode: exclusion;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: -1;
+}
+
+.stars {
+    background: #000000 url("/assets/img/stars.png") repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: -2;
+}
+
+.twinkle {
+    width: 10000px;
+    height: 100%;
+    background: transparent url("/assets/img/twinkle.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -3;
+    -moz-animation: move-background 60s linear infinite;
+    -ms-animation: move-background 60s linear infinite;
+    -o-animation: move-background 60s linear infinite;
+    -webkit-animation: move-background 60s linear infinite;
+    animation: move-background 60s linear infinite;
+}
+
+.display-4 {
+    font-size: 42pt;
+}
+
+.display-6 {
+    font-size: 20pt;
+}
+
+@media screen and (max-width: 410px) {
+    .title-text {
+        font-size: 36pt;
+    }
+
+    .sub-text {
+        margin: 10px 10px;
+        font-size: 20pt;
+    }
+}

@@ -15,7 +15,9 @@
 		crossorigin="anonymous"></script>
 
 	<!-- Local stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/landing.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
 
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +31,11 @@
 </head>
 
 <body>
+	<div class="background-container">
+		<div class="stars"></div>
+		<div class="twinkle"></div>
+		<div class="gradient"></div>
+	</div>
 	<!-- System Nav -->
 	<nav class="navbar navbar-expand-md">
 		<div class="container">
@@ -80,10 +87,10 @@
 		</div>
 	</section>
 	<!-- Info Box -->
-	<section id="info" class="section info">
+	<section class="section">
 		<div class="container">
-			<div class="row py-lg-0 py-sm-5">
-				<div class="col-md-7 py-lg-0 py-md-0 py-sm-4 py-4">
+			<div class="row py-lg-3 p-sm-3 column-gap-2">
+				<div class="col-md-7 info rounded-3 py-3 px-3"> <!--  py-lg-0 py-md-0 py-sm-3 py-4  -->
 					<p class="display-6">Hi, I'm Vin!</p>
 					<hr style="margin: 15px 0px;">
 					<p style="margin-bottom: 8pt">I'm a programmer, I mostly make things in C# 😎</p>
@@ -91,10 +98,12 @@
 						You can check out my work below or on
 						<a href="https://github.com/vinfg2">GitHub</a>
 					</p>
-					<p>If you'd like to contact me, you can reach me on Discord <i class="fa-brands fa-discord"></i> @VinFG1
+					<p>If you'd like to contact me, you can reach me on Discord <i class="fa-brands fa-discord"></i>
+						@VinFG1
 						<!--  or send me an <a href="mailto:#">email</a> -->
+					</p>
 				</div>
-				<div class="col">
+				<div class="col info rounded-3  py-3 px-3">
 					<p class="display-6">Updates</p>
 					<hr style="margin: 15px 0px;">
 					<table class="table mb-lg-0 mb-md-0 mb-3">
@@ -122,7 +131,7 @@
 
 	<!-- Work Showcase -->
 	<section id="showcase" class="work-showcase section">
-		<div class="container py-lg-0 py-sm-4 py-4">
+		<div class="container py-lg-0 py-sm-4 py-4 p-sm-3">
 			<h3 class="title">My Work</h3>
 			<div id="lists" class="row row-gap-3">
 				<div class="col-lg-4 col-md-4 col-sm-6">

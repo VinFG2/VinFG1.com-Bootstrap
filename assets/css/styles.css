@@ -2,10 +2,11 @@ html,
 body {
 	font-size: 13pt;
 	color: #dfdfdf;
-	background-image: url('../img/Banner.png');
+	/* background-image: url('../img/Banner.png');
 	background-position: right 0px top;
 	background-repeat: no-repeat;
 	background-color: #131313;
+} */
 }
 
 p {
@@ -39,6 +40,7 @@ hr {
 	margin: 10px 0px;
 }
 
+
 .display-6 {
 	font-size: 20pt;
 	font-weight: 400;
@@ -49,12 +51,13 @@ hr {
 }
 
 .about {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 .info {
-	background-color: #161616;
+	background-image: linear-gradient(180deg, #32383f50, #2222227c);
+	filter: drop-shadow(0px 0px 4px #a5a5a5bb);
 }
 
 .work-showcase {
@@ -62,7 +65,7 @@ hr {
 }
 
 .footer {
-	background-color: #131313;
+	background: #131313;
 	padding: 0.5rem 10px 0px 10px;
 }
 
@@ -71,7 +74,7 @@ hr {
 }
 
 .navbar {
-	background-color: transparent;
+	/* background-color: transparent; */
 }
 
 .navbar-burger {
@@ -97,8 +100,8 @@ a.nav-link:hover {
 }
 
 #lists .box {
-	background-image: linear-gradient(180deg, #32383f, #222222);
-	filter: drop-shadow(0px 0px 3px #a5a5a5);
+	background-image: linear-gradient(180deg, #32383f50, #2222227c);
+	filter: drop-shadow(0px 0px 4px #a5a5a5bb);
 }
 
 p,
@@ -149,11 +152,11 @@ td {
 	max-width: 256px;
 }
 
-.box {
+/* .box {
 	background-color: transparent;
 	border: 2px solid #5c6168;
 	color: #dfdfdf
-}
+} */
 
 .navbar-brand a.nav-item:focus,
 .navbar-brand a.nav-item:hover {
@@ -217,7 +220,7 @@ a.nav-link:hover {
 	consistent style */
 @media screen and (max-width: 1024px) {
 	body {
-		background-image: none;
+		/* background-image: none; */
 	}
 
 	.nav-glow {
@@ -246,14 +249,14 @@ a.nav-link:hover {
 	}
 
 	.about {
-		background-image: url('../img/Banner.png');
-		background-position: right -700px top;
-		padding-top: 4rem;
-		padding-bottom: 4rem;
+		/* background-image: url('../img/Banner.png');
+		background-position: right -700px top; */
+		padding-top: 3rem;
+		padding-bottom: 2rem;
 	}
 
 	.navbar {
-		background-color: #222;
+		/* background-color: #222; */
 		z-index: auto;
 	}
 
@@ -287,7 +290,7 @@ a.nav-link:hover {
 	}
 
 	.section {
-		padding: 3rem 0rem;
+		padding: 1rem 0rem;
 	}
 }
 
@@ -305,6 +308,6 @@ a.nav-link:hover {
 
 @media screen and (min-width: 1920px) {
 	body {
-		background-position: center 0;
+		/* background-position: center 0; */
 	}
 }
